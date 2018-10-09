@@ -15,6 +15,7 @@ def get_character_movies_from_api(character)
   response_hash["results"].each do |features|
     if features["name"] == character
       return films_arr = features["films"].sort
+      binding.pry
     end
   end
 
